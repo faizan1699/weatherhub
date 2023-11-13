@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body:hover {
+  background-color: rgba(195, 240, 240, 0.116);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.top-bar,
+.footer,
+.search-btn,
+.card-header {
+  color: #fff;
+  background-color: rgb(241, 118, 47) !important;
+}
+
+.readiobtninput {
+  background-color: rgb(241, 118, 47);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.top-bar:hover,
+.footer:hover,
+.card-header:hover {
+  color: #fff;
+  transition: 0.8s;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.466);
+  background-color: rgb(255, 140, 73) !important;
+}
+
+.radiobtnforinput {
+  transition: background-color 1s, color 1s;
+  background-color: rgb(255, 140, 73);
+  color: #ffff;
+  font-weight: bold;
+}
+
+.card-body:hover {
+  background-color: #e7b9b911;
+}
+
+.search-btn {
+  border-left: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.getCityInput {
+  border: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid black !important;
+}
+
+.search-btn:hover {
+  transition: 1s;
+  font-weight: bold;
+  color: yellow;
+}
+
+.card-header {
+  color: #fff !important;
+}
+
+.card {
+  cursor: grab;
+  animation: slide 2s ease-in;
+  transition: 2s;
+}
+
+@keyframes slide {
+  0% {
+    margin-top: 1px;
+  }
+
+  10% {
+    top: 0;
+  }
+
+  90% {
+    top: 0;
+  }
+
+  100% {
+    margin-top: -1px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: rgba(0, 128, 0, 0.432);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border-top: 10px solid red;
+  border-bottom: 10px solid red;
+  background-color: #00000075;
+  /* color of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+}
+
+
+.alert {
+  animation: slide-in-out 4s ease-in;
+}
+
+@keyframes slide-in-out {
+  0% {
+    top: -100px;
+  }
+
+  10% {
+    top: 0;
+  }
+
+  90% {
+    top: 0;
+  }
+
+  100% {
+    top: -100px;
+  }
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
