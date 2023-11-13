@@ -63,8 +63,6 @@ export default function CitySearch(props) {
     return (
 
         <form id='cardsForm' onSubmit={getCityName}>
-            <div>{latitude} lat</div>
-            <div>{longitude} lon</div>
             <div></div>
 
                 <div className='text-danger fa-fade mb-2 fw-bold'>Enter Your Desired city below <i className="fa-solid fa-arrows-down-to-line"></i> </div>

@@ -2,7 +2,6 @@ import React from 'react';
 
 import WeatherCards from './Card/WeatherCards';
 import GraphsPanel from './GraphsPanel';
-import Projects from './ProjectsComponent/Projects';
 
 export default function Main(props) {
     
@@ -17,13 +16,11 @@ export default function Main(props) {
             </div>
 
             <div className="row g-1"> 
-                <div className="col-md-6">
+                <div className="col">
                     <GraphsPanel />
                 </div>
 
-                <div className="col-md-6">
-                    <Projects />
-                </div>
+                
 
             </div>
         </>
