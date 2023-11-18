@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 export function getDataFromWeather(city) {
 
   const apiKey = `45d216bf2c7cedeb34a58268131f2f4a`;
@@ -12,38 +11,12 @@ export function getDataFromWeather(city) {
 
 }
 
-export async function GetDataFromWeatherlat (lon, lat) {
+const apiKey = '45d216bf2c7cedeb34a58268131f2f4a';
+const unit = 'metric';
 
-  const apiKey = `45d216bf2c7cedeb34a58268131f2f4a`;
-  const unit = 'metric';
-  
-  try {
-    const responselat = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`
-    );
-    return responselat;
-  } catch (error) { }
-}
+export function getWeatherData (lat, lon)  {
 
-  // let urllat = `https://api.openweathermap.org/data/2.5/weather?lon=${longitude}&lat=${latitude}&lang=en&appid=${apiKey}&units=${unit}`;
-  // const responselat = axios.get(urllat);
-  // return responselat;
-
-
-
-
-  const apiKey = '45d216bf2c7cedeb34a58268131f2f4a';
-  const unit = 'metric';
-  
-  const getWeatherData = async (lat, lon) => {
-    try {
-      const response = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit}`
-      );
-      return response.data;
-    } catch (error) {
-    }
+  let urlLat = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=en&appid=${apiKey}&units=${unit}`
+   const res = axios.get(urlLat); 
+   return res;
   };
-  
-  export default getWeatherData;
-  

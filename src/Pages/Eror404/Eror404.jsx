@@ -16,16 +16,14 @@ export default function Error404() {
     }, []);
 
     return (
-    
-            <div className="row my-5">
-                <div className="col-md-8 mx-auto text-center">
-                    <h1 className="display-1 fw-bold ">404 - Not Found</h1>
-                    <p className="lead"><span className='fw-bold text-danger'>{pathname}</span> page doesn't exist.</p>
-                    <Link to="/" className="btn btn-success text-light border-0 rounded-pill small btn-outline-danger fw-bold">
-                        Go to Home
-                    </Link>
-                </div>
+        <div className="my-5 " >
+            <div className="col-md-8 mx-auto text-center">
+                <h1 className="display-1 fw-bold ">404 - Not Found</h1>
+                <p className="lead"><span className='fw-bold text-danger'>{pathname}</span> page doesn't exist.</p>
+                <Link to="/" className="btn btn-danger text-light border-0 rounded-0 small btn-outline-success fw-bold">
+                    Go to Home
+                </Link>
             </div>
-     
+        </div>
     )
 }

@@ -30,10 +30,8 @@ export default function App() {
     <div className="g-0">
       <div className="container-md">
 
-        <div className="row" >
-
+        <div className="row">
           <Navbar />
-
           <div className="g-0">
             <div className="px-2">
 
@@ -41,7 +39,7 @@ export default function App() {
 
               <Routes>
                 <Route path='*' element={<Eror404 />} />
-                <Route path='' element={<WeatherPage showAlert={showAlert} />} />
+                <Route path='/' element={<WeatherPage showAlert={showAlert} />} />
               </Routes>
 
             </div>

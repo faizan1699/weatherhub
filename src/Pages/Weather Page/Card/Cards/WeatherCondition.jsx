@@ -4,10 +4,10 @@ export default function WetherCondition(props) {
 
     var data = props.data;
 
-    const weatherData = data[1].weatherData;     
-    var Loader = data[2].Loader;                 
-    var loading = data[3].loading;               
-   
+    const weatherData = data[0].weatherData;
+    var Loader = data[1].Loader;
+    var loading = data[2].loading;
+
     return (
 
         <>

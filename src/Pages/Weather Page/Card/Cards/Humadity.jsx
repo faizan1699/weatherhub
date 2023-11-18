@@ -5,9 +5,9 @@ export default function Humadity(props) {
 
   var data = props.data;
 
-  const weatherData = data[1].weatherData;     
-  var Loader = data[2].Loader;                 
-  var loading = data[3].loading;               
+  const weatherData = data[0].weatherData;     
+  var Loader = data[1].Loader;                 
+  var loading = data[2].loading;               
  
 
   return (
@@ -37,7 +37,6 @@ export default function Humadity(props) {
 
             <dt className="col-8">Visibility: </dt>
             <dd className="col-4 small">{weatherData.visibility / 1000}</dd>
-
 
           </dl>
         )

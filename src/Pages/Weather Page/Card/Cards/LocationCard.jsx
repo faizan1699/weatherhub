@@ -1,17 +1,18 @@
-import React , {useEffect , useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function LocationCard(props) {
-  
-  const [time, setTime] = useState('');
-  var data = props.data;
 
-  const weatherData = data[1].weatherData;     
-  var Loader = data[2].Loader;                 
-  var loading = data[3].loading;               
- 
+  const [time, setTime] = useState('');
+  const data = props.data;
+
+  const weatherData = data[0].weatherData;
+  const Loader = data[1].Loader;
+  const loading = data[2].loading;
+  const setLatLon = data[3].setLatLon;
+  const latlon = data[4].latlon;
 
   useEffect(() => {
-     setInterval(() => {
+    setInterval(() => {
       setTime(new Date().toLocaleTimeString());
     }, 1000);
   }, []);
@@ -24,8 +25,8 @@ export default function LocationCard(props) {
           <Loader />
         ) : (
           <dl className="row">
-            <dt className="col-8">Country:</dt>
 
+            <dt className="col-8">Country:</dt>
             <dd id="textForloading" className="col-4 fw-bold small">{weatherData.sys.country}</dd>
 
             <dt className="col-8">City:</dt>

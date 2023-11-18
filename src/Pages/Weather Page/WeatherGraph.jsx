@@ -8,7 +8,7 @@ const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 export default function WeatherGraph(props) {
 
   const limit = 100;
-  let y = 100;
+  let y = 90;
   const data = [];
   const dataSeries = { type: "line" };
   const dataPoints = [];

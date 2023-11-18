@@ -20,7 +20,7 @@ export default function CitySearch(props) {
         const specialChar = /[!@#$%^&*()_+''":;.,<-_/>/|\]{}~]/;
 
         if (isNaN(input.length < 5)) {
-            showAlert('pls write correct city name', 'warning')
+            showAlert('pls write correct city name', 'warning');
         }
         else if (input === '' || input.lenght <= 4) {
             showAlert('Write city name in text field', 'info');

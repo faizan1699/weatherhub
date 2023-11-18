@@ -81,7 +81,6 @@ body:hover {
   90% {
     top: 0;
   }
-
   100% {
     margin-top: -1px;
   }
@@ -97,7 +96,7 @@ body:hover {
   border-top: 10px solid red;
   border-bottom: 10px solid red;
   background-color: #00000075;
-  /* color of the thumb */
+  
 }
 
 ::-webkit-scrollbar-thumb:hover {

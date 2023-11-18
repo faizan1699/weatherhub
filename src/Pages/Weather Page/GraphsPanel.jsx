@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import WeatherGraph from './WeatherGraph';
-
 import Loader from '../../Common/Loader/Loader';
-
 
 export default function GraphsPanel(props) {
 
