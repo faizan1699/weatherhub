@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Weather_Hub/static/css/main.84ec31e2.css",
+    "main.js": "/Weather_Hub/static/js/main.f32fc224.js",
+    "static/media/dotLoader.gif": "/Weather_Hub/static/media/dotLoader.ddaab42387678d8dac11.gif",
+    "static/media/Loader.gif": "/Weather_Hub/static/media/Loader.6fca17cd620dd235c84c.gif",
+    "index.html": "/Weather_Hub/index.html",
+    "main.84ec31e2.css.map": "/Weather_Hub/static/css/main.84ec31e2.css.map",
+    "main.f32fc224.js.map": "/Weather_Hub/static/js/main.f32fc224.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84ec31e2.css",
+    "static/js/main.f32fc224.js"
+  ]
+}
